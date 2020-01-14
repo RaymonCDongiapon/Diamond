@@ -1,0 +1,31 @@
+package shapes;
+
+public class Diamond {
+
+  
+    public static void main(String[] args) {
+        int columns = 1;
+        int spaces = 3;
+        for (int a = 1; a <= 7; a++) {
+         for (int b=1; b<=spaces; b++){
+                System.out.print(" ");
+                 }
+         
+            for (int b = 1; b <= columns; b++) {
+                System.out.print("*");
+               
+            }
+            System.out.println();
+           
+            if (a<4){
+                columns=columns+2;
+                spaces=spaces-1;
+            }
+            else{
+                columns=columns-2;
+                spaces=spaces+1;
+            }
+        }
+    }
+    
+}
